@@ -31,27 +31,27 @@
   .mobile .assistant h2{font-size:21px;}
 
   /* ====== Glovo-reklám ====== */
-  .ad-head{display:flex;align-items:flex-start;gap:10px;border-top:1px solid var(--divider);margin-top:28px;padding-top:22px;}
-  .glovo-logo{width:34px;height:34px;border-radius:50%;background:var(--glovo-yellow);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;font-size:12px;color:var(--glovo-green);letter-spacing:-.3px;position:relative;}
-  .glovo-logo sup{font-size:9px;position:absolute;top:6px;right:4px;}
-  .ad-head-text{flex:1;line-height:1.25;}
-  .ad-name{font-size:15px;font-weight:600;}
-  .mobile .ad-name{font-size:16px;}
-  .ad-sponsored{font-size:14px;color:var(--muted);margin-top:1px;}
-  .mobile .ad-sponsored{font-size:15px;}
-  .ad-dots{color:var(--muted);font-size:18px;letter-spacing:1px;cursor:pointer;}
-  .mobile .ad-dots{font-size:20px;}
-  .ad-sub{color:var(--muted);font-size:15px;line-height:1.5;margin:14px 0 14px;}
-  .mobile .ad-sub{font-size:16px;margin-bottom:16px;}
-  .ad-card{background:#f7f7f7;border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:520px;cursor:pointer;}
-  .ad-card:hover{background:#f1f1f1;}
-  .ad-card-text{flex:1;}
-  .ad-card-title{font-size:16px;font-weight:600;margin-bottom:5px;}
-  .mobile .ad-card-title{font-size:17px;margin-bottom:6px;}
-  .ad-card-desc{font-size:14px;color:var(--muted);line-height:1.4;}
-  .mobile .ad-card-desc{font-size:15px;}
-  .ad-card-img{width:96px;height:66px;border-radius:12px;flex-shrink:0;overflow:hidden;position:relative;background:#241710;}
-  .mobile .ad-card-img{width:92px;height:64px;}
+  .srv-top{display:flex;align-items:flex-start;gap:10px;border-top:1px solid var(--divider);margin-top:28px;padding-top:22px;}
+  .srv-logo{width:34px;height:34px;border-radius:50%;background:var(--glovo-yellow);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;font-size:12px;color:var(--glovo-green);letter-spacing:-.3px;position:relative;}
+  .srv-logo sup{font-size:9px;position:absolute;top:6px;right:4px;}
+  .srv-top-text{flex:1;line-height:1.25;}
+  .srv-name{font-size:15px;font-weight:600;}
+  .mobile .srv-name{font-size:16px;}
+  .srv-tag{font-size:14px;color:var(--muted);margin-top:1px;}
+  .mobile .srv-tag{font-size:15px;}
+  .srv-dots{color:var(--muted);font-size:18px;letter-spacing:1px;cursor:pointer;}
+  .mobile .srv-dots{font-size:20px;}
+  .srv-sub{color:var(--muted);font-size:15px;line-height:1.5;margin:14px 0 14px;}
+  .mobile .srv-sub{font-size:16px;margin-bottom:16px;}
+  .srv-card{background:#f7f7f7;border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:520px;cursor:pointer;}
+  .srv-card:hover{background:#f1f1f1;}
+  .srv-card-text{flex:1;}
+  .srv-card-title{font-size:16px;font-weight:600;margin-bottom:5px;}
+  .mobile .srv-card-title{font-size:17px;margin-bottom:6px;}
+  .srv-card-desc{font-size:14px;color:var(--muted);line-height:1.4;}
+  .mobile .srv-card-desc{font-size:15px;}
+  .srv-card-img{width:96px;height:66px;border-radius:12px;flex-shrink:0;overflow:hidden;position:relative;background:#241710;}
+  .mobile .srv-card-img{width:92px;height:64px;}
   .burger{position:absolute;inset:0;background:
       radial-gradient(circle at 30% 38%, #f2b65a 0 9px, transparent 9px),
       radial-gradient(circle at 68% 30%, #f0ad4e 0 8px, transparent 8px),
@@ -211,16 +211,16 @@ var RESPONSE =
     '<li class="s-hide">Serpenyőben megsütöd (vagy szendvicssütőben)</li>' +
   '</ul>' +
   '<p class="tip s-hide"><span class="hand">👉</span>Kívül ropogós, belül olvadós → instant boldogság.</p>' +
-  '<div id="ad" class="s-hide">' +
-    '<div class="ad-head">' +
-      '<div class="glovo-logo">Glovo<sup>°</sup></div>' +
-      '<div class="ad-head-text"><div class="ad-name">Glovo</div><div class="ad-sponsored">Sponsored</div></div>' +
-      '<div class="ad-dots">•••</div>' +
+  '<div id="srv" class="s-hide">' +
+    '<div class="srv-top">' +
+      '<div class="srv-logo">Glovo<sup>°</sup></div>' +
+      '<div class="srv-top-text"><div class="srv-name">Glovo</div><div class="srv-tag">Sponsored</div></div>' +
+      '<div class="srv-dots">•••</div>' +
     '</div>' +
-    '<p class="ad-sub">Gyors és kényelmes megoldások a mindennapi étkezésekhez.</p>' +
-    '<div class="ad-card">' +
-      '<div class="ad-card-text"><div class="ad-card-title">Gyors étel kiszállítás</div><div class="ad-card-desc">Rendelj gyors ebédet – készételek és napi menük…</div></div>' +
-      '<div class="ad-card-img"><div class="burger"></div></div>' +
+    '<p class="srv-sub">Gyors és kényelmes megoldások a mindennapi étkezésekhez.</p>' +
+    '<div class="srv-card">' +
+      '<div class="srv-card-text"><div class="srv-card-title">Gyors étel kiszállítás</div><div class="srv-card-desc">Rendelj gyors ebédet – készételek és napi menük…</div></div>' +
+      '<div class="srv-card-img"><div class="burger"></div></div>' +
     '</div>' +
   '</div>';
 
