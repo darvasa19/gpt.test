@@ -286,7 +286,7 @@ const SHELL_WEB = `
         <div class="thread">
           <div class="user-row hidden" id="userRow"><div class="user-bubble" id="userBubble"></div></div>
           <div class="thinking hidden" id="thinking"><span></span><span></span><span></span></div>
-          <div class="assistant" id="assistant">{{ASSISTANT}}</div>
+          <div class="assistant" id="assistant"></div>
         </div>
       </div>
       <div class="composer-wrap">
@@ -322,7 +322,7 @@ const SHELL_MOBILE = `
     <div class="chat" id="scroll">
       <div class="user-row hidden" id="userRow"><div class="user-bubble" id="userBubble"></div></div>
       <div class="thinking hidden" id="thinking"><span></span><span></span><span></span></div>
-      <div class="assistant" id="assistant">{{ASSISTANT}}</div>
+      <div class="assistant" id="assistant"></div>
     </div>
     <div class="composer">
       <div class="composer-inner">
@@ -357,7 +357,8 @@ const isMobile = forced === 'mobile' ? true
 
 document.documentElement.classList.add(isMobile ? 'mobile' : 'desktop');
 const root = document.getElementById('root');
-root.innerHTML = (isMobile ? SHELL_MOBILE : SHELL_WEB).replace('{{ASSISTANT}}', RESPONSE);
+root.innerHTML = isMobile ? SHELL_MOBILE : SHELL_WEB;
+document.getElementById('assistant').innerHTML = RESPONSE;
 
 /* ---- vezérlés ---- */
 const $ = s => document.querySelector(s);
